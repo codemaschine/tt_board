@@ -177,6 +177,38 @@
 				<source><![CDATA[Wrong captcha word '%s' entered!]]></source>
 				<target><![CDATA[Falsches Captcha-Wort '%s' eingegeben!]]></target>
 			</trans-unit>
+			<trans-unit id="list_browseresults_first" approved="yes">
+				<source>&lt;&lt;&#160;First</source>
+				<target>&lt;&lt;&#160;Erste</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_prev" approved="yes">
+				<source>&lt;&#160;Previous</source>
+				<target>&lt;&#160;Vorherige</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_page" approved="yes">
+				<source>Page</source>
+				<target>Seite</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_next" approved="yes">
+				<source>Next&#160;&gt;</source>
+				<target>Nächste&#160;&gt;</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_last" approved="yes">
+				<source>Last&#160;&gt;&gt;</source>
+				<target>Letzte&#160;&gt;&gt;</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_displays_marker" approved="yes">
+				<source>Displaying results ###FROM### to ###TO### out of ###OUT_OF###</source>
+				<target>Zeige Ergebnisse von ###FROM### bis ###TO### von insgesamt ###OUT_OF### an.</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_to" approved="yes">
+				<source>to</source>
+				<target>bis</target>
+			</trans-unit>
+			<trans-unit id="list_browseresults_displays" approved="yes">
+				<source><![CDATA[Displaying results ###SPAN_BEGIN###%s to %s</span> out of ###SPAN_BEGIN###%s</span>]]></source>
+				<target><![CDATA[Zeige Ergebnisse von ###SPAN_BEGIN###%s bis %s</span> von insgesamt ###SPAN_BEGIN###%s</span> an.]]></target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

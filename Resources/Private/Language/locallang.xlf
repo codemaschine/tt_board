@@ -180,6 +180,30 @@
 			<trans-unit id="newThread.subjectPrefix" xml:space="preserve">
 				<source>New thread</source>
 			</trans-unit>
+			<trans-unit id="list_browseresults_first" xml:space="preserve">
+				<source>&lt;&lt;&#160;First</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_prev" xml:space="preserve">
+				<source>&lt;&#160;Previous</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_page" xml:space="preserve">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_next" xml:space="preserve">
+				<source>Next&#160;&gt;</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_last" xml:space="preserve">
+				<source>Last&#160;&gt;&gt;</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_displays_marker" xml:space="preserve">
+				<source>Displaying results ###FROM### to ###TO### out of ###OUT_OF###</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_to" xml:space="preserve">
+				<source>to</source>
+			</trans-unit>
+			<trans-unit id="list_browseresults_displays" xml:space="preserve">
+				<source><![CDATA[Displaying results ###SPAN_BEGIN###%s to %s</span> out of ###SPAN_BEGIN###%s</span>]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
