@@ -11,7 +11,7 @@
 			</trans-unit>
 			<trans-unit id="post.thanks" xml:space="preserve">
 				<source><![CDATA[Many thanks for your contribution. Click again on the heading forum to read your contribution.]]></source>
-				<target><![CDATA[Vielen Dank für Ihren Beitrag. Klicken Sie erneut auf die Rubrik Forum, um Ihren Beitrag zu lesen.]]></target>
+				<target><![CDATA[Vielen Dank für deinen Beitrag.]]></target>
 			</trans-unit>
 			<trans-unit id="board_age" approved="yes">
 				<source><![CDATA[Age]]></source>
