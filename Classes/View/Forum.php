@@ -219,7 +219,7 @@ class Forum implements \TYPO3\CMS\Core\SingletonInterface
                             $ref,
                             1
                         );
-                } else {    
+                } else {
                     $recentPosts =
                         $modelObj->getThreads(
                             $composite->getPidList(),
@@ -349,9 +349,10 @@ class Forum implements \TYPO3\CMS\Core\SingletonInterface
                         );
                 }
 
-                if (!$conf['tree']) {
-                    krsort($subpartArray);
-                }
+                // if (!$conf['tree']) {
+                //     krsort($subpartArray);
+                // }
+                $subpartArray = \array_reverse($subpartArray, true);
 
                     // Substitution:
                 $markerArray = [];
@@ -386,4 +387,3 @@ class Forum implements \TYPO3\CMS\Core\SingletonInterface
         return $content;
     } // printView
 }
-

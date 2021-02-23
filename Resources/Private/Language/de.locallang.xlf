@@ -61,6 +61,10 @@
 				<source><![CDATA[Last Post]]></source>
 				<target><![CDATA[Letzter Beitrag]]></target>
 			</trans-unit>
+			<trans-unit id="board_created" approved="yes">
+				<source><![CDATA[Created at]]></source>
+				<target><![CDATA[Erstellt am]]></target>
+			</trans-unit>
 			<trans-unit id="board_next_message" approved="yes">
 				<source><![CDATA[Next Message]]></source>
 				<target><![CDATA[Nächste Nachricht]]></target>

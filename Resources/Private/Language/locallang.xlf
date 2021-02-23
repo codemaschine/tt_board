@@ -81,6 +81,9 @@
 			<trans-unit id="board_last_post" xml:space="preserve">
 				<source>Last Post</source>
 			</trans-unit>
+			<trans-unit id="board_created" xml:space="preserve">
+				<source>Created at</source>
+			</trans-unit>
 			<trans-unit id="board_next_message" xml:space="preserve">
 				<source>Next Message</source>
 			</trans-unit>
