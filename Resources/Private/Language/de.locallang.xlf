@@ -213,6 +213,62 @@
 				<source><![CDATA[Displaying results ###SPAN_BEGIN###%s to %s</span> out of ###SPAN_BEGIN###%s</span>]]></source>
 				<target><![CDATA[Zeige Ergebnisse von ###SPAN_BEGIN###%s bis %s</span> von insgesamt ###SPAN_BEGIN###%s</span> an.]]></target>
 			</trans-unit>
+<trans-unit id="p_at" xml:space="preserve">
+                <source>at</source>
+                <target>auf</target>
+            </trans-unit>
+            <trans-unit id="p_salutation" xml:space="preserve">
+                <source>Hello</source>
+                <target>Hallo</target>
+            </trans-unit>
+            <trans-unit id="p_url_title" xml:space="preserve">
+                <source>This thread is located at</source>
+                <target>Link zum Thema</target>
+            </trans-unit>
+            <trans-unit id="p_text_snippet" xml:space="preserve">
+                <source>Text Snippet</source>
+                <target>Textvorlage</target>
+            </trans-unit>
+            <trans-unit id="p_subject" xml:space="preserve">
+                <source>Subject</source>
+                <target>Betreff</target>
+            </trans-unit>
+            <trans-unit id="p_content" xml:space="preserve">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="newReply.author" xml:space="preserve">
+                <source>Author</source>
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="newReply.city" xml:space="preserve">
+                <source>City</source>
+                <target>Ort</target>
+            </trans-unit>
+            <trans-unit id="newReply.didWhat" xml:space="preserve">
+                <source>has just replied to a thread at</source>
+                <target>hat gerade auf das Thema geantwortet auf</target>
+            </trans-unit>
+            <trans-unit id="newReply.followThisLink" xml:space="preserve">
+                <source>Follow this link</source>
+                <target>Im Browser aufrufen</target>
+            </trans-unit>
+            <trans-unit id="newReply.message" xml:space="preserve">
+                <source>Message</source>
+                <target>Nachricht</target>
+            </trans-unit>
+            <trans-unit id="newReply.subjectPrefix" xml:space="preserve">
+                <source>Reply to post at</source>
+                <target>Antworte auf diesen Beitrag auf</target>
+            </trans-unit>
+            <trans-unit id="newThread.didWhat" xml:space="preserve">
+                <source>has just created a new thread at</source>
+                <target>hat gerade ein neues Thema eröffnet auf</target>
+            </trans-unit>
+            <trans-unit id="newThread.subjectPrefix" xml:space="preserve">
+                <source>New thread</source>
+                <target>Neues Thema</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
