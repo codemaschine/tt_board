@@ -100,7 +100,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
                     QueryParameter::CLAUSE_AND_WHERE,
                     $this->getTablename(),
                     'reference',
-                    $ref, 
+                    $ref,
                     \PDO::PARAM_STR,
                     QueryParameter::COMP_EQUAL
                 );
@@ -242,7 +242,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
      * Returns number of post in a forum.
      * @param string ... $pidList comma separated list of page ids.
      * @param array  ... $andWhereEqualsArray array of QueryParameter for equation comparisons
-     * @param where ... $where 
+     * @param where ... $where
      */
     public function getNumPosts ($pidList, array $queryParameters = [], QueryBuilder $where = null)
     {
@@ -311,7 +311,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
                     QueryParameter::class,
                     QueryParameter::CLAUSE_AND_WHERE,
                     $this->getTablename(),
-                    'parent', 
+                    'parent',
                     0,
                     \PDO::PARAM_INT,
                     QueryParameter::COMP_EQUAL
@@ -445,8 +445,8 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
             $queryBuilder
                 ->select('*')
                 ->from($this->getTablename());
-            
-            if ($uid) {            
+
+            if ($uid) {
                 $queryBuilder->where(
                     $queryBuilder->expr()->eq(
                         $this->getTablename() . '.uid',
@@ -615,7 +615,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
                     )
                 )
             );
-            
+
         if ($type != 'next') {
             $queryBuilder->andWhere(
                 $queryBuilder->expr()->gt(
@@ -637,7 +637,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
                 )
             );
         }
-        
+
         $queryBuilder->andWhere(
             $queryBuilder->expr()->eq(
                 'parent',
@@ -653,7 +653,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
             ->setMaxResults(1)
             ->execute()
             ->fetchAll();
-         
+
         if (is_array($rows)) {
             $result = $rows['0'];
         }
@@ -786,7 +786,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
 
             $statement = $queryBuilder
                 ->orderBy('crdate', 'DESC');
-                
+
             if ($offset) {
                 $queryBuilder
                     ->setFirstResult($offset);
@@ -829,12 +829,9 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
                     $queryBuilder->createNamedParameter($parent, \PDO::PARAM_INT)
                 )
             );
-            
-            if ($descend) {
-                $queryBuilder->orderBy('crdate', 'DESC');
-            } else {
-                $queryBuilder->orderBy('crdate');
-            }
+
+            $queryBuilder->orderBy('crdate', 'DESC');
+
             if ($offset) {
                 $queryBuilder
                     ->setFirstResult($offset);
@@ -883,7 +880,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
             $treeMarks .= ',';
         }
         $whereRef = $this->getWhereRef($ref);
-        
+
         $field = 'pid';
         $queryBuilder
             ->count('*')
@@ -952,7 +949,7 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
             $theRows[$prevUid]['nextUid'] = $uid;
             $row['prevUid'] = $theRows[$prevUid]['uid'];
             $theRows[$uid] = $row;
-            
+
                 // get the branch
             $this->getRecordTree(
                 $theRows,
@@ -990,5 +987,3 @@ class TtBoard implements \TYPO3\CMS\Core\SingletonInterface
         return $row['tstamp'];
     }
 }
-
-

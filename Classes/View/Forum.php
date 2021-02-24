@@ -352,7 +352,6 @@ class Forum implements \TYPO3\CMS\Core\SingletonInterface
                 // if (!$conf['tree']) {
                 //     krsort($subpartArray);
                 // }
-                $subpartArray = \array_reverse($subpartArray, true);
 
                     // Substitution:
                 $markerArray = [];
